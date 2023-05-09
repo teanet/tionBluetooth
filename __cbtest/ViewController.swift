@@ -6,13 +6,26 @@
 //
 
 import Cocoa
+import CoreBluetooth
 
 class ViewController: NSViewController {
+
+	let bluetoothManager = TionBluetoothManager()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		// Do any additional setup after loading the view.
+		bluetoothManager.start(TionUpdate(fanSpeed: 2))
+
+//		DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+//
+//			self.bluetoothManager.start(TionUpdate(fanSpeed: 2))
+//		})
+
+//		DispatchQueue.main.asyncAfter(deadline: .now() + 8, execute: {
+//
+//			self.bluetoothManager.start(TionUpdate(fanSpeed: 2))
+//		})
 	}
 
 	override var representedObject: Any? {
@@ -21,6 +34,7 @@ class ViewController: NSViewController {
 		}
 	}
 
+	
+
 
 }
-

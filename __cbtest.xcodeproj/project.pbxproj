@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733E85BD2A0A01C000DC467F /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 733E85BC2A0A01C000DC467F /* DataUtil.m */; };
+		733E85BF2A0A568700DC467F /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E85BE2A0A568700DC467F /* PeripheralDelegate.swift */; };
+		733E85C22A0A743200DC467F /* TionBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E85C12A0A743200DC467F /* TionBluetoothManager.swift */; };
+		733E85C42A0A7A1400DC467F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E85C32A0A7A1400DC467F /* Utils.swift */; };
+		733E85C62A0A7C0B00DC467F /* Tion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E85C52A0A7C0B00DC467F /* Tion.swift */; };
 		73ECA1932A09FFD000684FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECA1922A09FFD000684FA6 /* AppDelegate.swift */; };
 		73ECA1952A09FFD000684FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ECA1942A09FFD000684FA6 /* ViewController.swift */; };
 		73ECA1972A09FFD100684FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ECA1962A09FFD100684FA6 /* Assets.xcassets */; };
@@ -34,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		733E85BA2A0A01C000DC467F /* __cbtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "__cbtest-Bridging-Header.h"; sourceTree = "<group>"; };
+		733E85BB2A0A01C000DC467F /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		733E85BC2A0A01C000DC467F /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		733E85BE2A0A568700DC467F /* PeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
+		733E85C12A0A743200DC467F /* TionBluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TionBluetoothManager.swift; sourceTree = "<group>"; };
+		733E85C32A0A7A1400DC467F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		733E85C52A0A7C0B00DC467F /* Tion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tion.swift; sourceTree = "<group>"; };
 		73ECA18F2A09FFD000684FA6 /* __cbtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __cbtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73ECA1922A09FFD000684FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73ECA1942A09FFD000684FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		733E85C02A0A740E00DC467F /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				733E85BE2A0A568700DC467F /* PeripheralDelegate.swift */,
+				733E85C12A0A743200DC467F /* TionBluetoothManager.swift */,
+				733E85C32A0A7A1400DC467F /* Utils.swift */,
+				733E85C52A0A7C0B00DC467F /* Tion.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 		73ECA1862A09FFD000684FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +118,15 @@
 		73ECA1912A09FFD000684FA6 /* __cbtest */ = {
 			isa = PBXGroup;
 			children = (
+				733E85BB2A0A01C000DC467F /* DataUtil.h */,
+				733E85BC2A0A01C000DC467F /* DataUtil.m */,
 				73ECA1922A09FFD000684FA6 /* AppDelegate.swift */,
 				73ECA1942A09FFD000684FA6 /* ViewController.swift */,
+				733E85C02A0A740E00DC467F /* Bluetooth */,
 				73ECA1962A09FFD100684FA6 /* Assets.xcassets */,
 				73ECA1982A09FFD100684FA6 /* Main.storyboard */,
 				73ECA19B2A09FFD100684FA6 /* __cbtest.entitlements */,
+				733E85BA2A0A01C000DC467F /* __cbtest-Bridging-Header.h */,
 			);
 			path = __cbtest;
 			sourceTree = "<group>";
@@ -189,6 +216,7 @@
 				TargetAttributes = {
 					73ECA18E2A09FFD000684FA6 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					73ECA19F2A09FFD100684FA6 = {
 						CreatedOnToolsVersion = 14.2;
@@ -251,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				733E85BD2A0A01C000DC467F /* DataUtil.m in Sources */,
 				73ECA1952A09FFD000684FA6 /* ViewController.swift in Sources */,
+				733E85BF2A0A568700DC467F /* PeripheralDelegate.swift in Sources */,
 				73ECA1932A09FFD000684FA6 /* AppDelegate.swift in Sources */,
+				733E85C22A0A743200DC467F /* TionBluetoothManager.swift in Sources */,
+				733E85C42A0A7A1400DC467F /* Utils.swift in Sources */,
+				733E85C62A0A7C0B00DC467F /* Tion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = __cbtest/__cbtest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -425,6 +459,7 @@
 				DEVELOPMENT_TEAM = HJ648XXPWE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = NSBluetoothAlwaysUsageDescription;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -436,6 +471,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nazabore.--cbtest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "__cbtest/__cbtest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -445,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = __cbtest/__cbtest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -452,6 +490,7 @@
 				DEVELOPMENT_TEAM = HJ648XXPWE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = NSBluetoothAlwaysUsageDescription;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -463,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.nazabore.--cbtest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "__cbtest/__cbtest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
